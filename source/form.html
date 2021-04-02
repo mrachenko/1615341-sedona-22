@@ -45,7 +45,7 @@
       <section class="intro intro--form">
         <div class="intro__wrapper">
           <div class="intro__background intro__background--form">
-            <img class="intro__background-text intro__background-text--form" src="img/SEDONA.svg" alt="Седона">
+            <img class="intro__background-text intro__background-text--form" src="img/sedona.svg" alt="Седона">
             <h1 class="intro__title intro__title--form">
               Оставьте свой отзыв
             </h1>
@@ -55,7 +55,7 @@
           </div>
         </div>
       </section>
-      <form class="feedback" action="https://echo.htmlacademy.ru">
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="feedback__user-info">
           <legend class="feedback__legend">Представьтесь:</legend>
           <label class="feedback__input-text input-text">
@@ -86,47 +86,45 @@
 
         <fieldset class="feedback__impression">
           <legend class="feedback__legend">Ваше общее впечатление:</legend>
-          <label class="feedback__select select">
-            <input type="radio" name="impression" checked>
+          <label class="feedback__choice choice">
+            <input type="radio" name="impression" value="positive" checked>
             <span>Скорее положительное</span>
           </label>
-          <label class="feedback__select select">
-            <input type="radio" name="impression">
+          <label class="feedback__choice choice">
+            <input type="radio" name="impression" value="negative">
             <span>Скорее отрицательное</span>
           </label>
-          <label class="feedback__select select">
-            <input type="radio" name="impression">
+          <label class="feedback__choice choice">
+            <input type="radio" name="impression" value="not">
             <span>Затрудняюсь ответить</span>
           </label>
         </fieldset>
 
         <fieldset class="feedback__attraction">
           <legend class="feedback__legend">Посещенные достопримечательности:</legend>
-          <label class="feedback__select select">
-            <input type="checkbox" name="attraction" checked>
+          <label class="feedback__choice choice">
+            <input type="checkbox" name="attraction" value="bridge" checked>
             <span>Мост Дьявола</span>
           </label>
-          <label class="feedback__select select">
-            <input type="checkbox" name="attraction" checked>
+          <label class="feedback__choice choice choice--checkbox">
+            <input type="checkbox" name="attraction" value="mountain" checked>
             <span>Гора-Колокол</span>
           </label>
-          <label class="feedback__select select">
-            <input type="checkbox" name="attraction" checked>
+          <label class="feedback__choice choice choice--checkbox">
+            <input type="checkbox" name="attraction" value="park" checked>
             <span>Слайд-парк</span>
           </label>
-          <label class="feedback__select select">
-            <input type="checkbox" name="attraction">
+          <label class="feedback__choice choice choice--checkbox">
+            <input type="checkbox" name="attraction" value="rocks">
             <span>Красные скалы</span>
           </label>
         </fieldset>
 
         <fieldset class="feedback__emotions">
           <legend class="feedback__legend">Опишите свои эмоции:</legend>
-          <label class="feedback__select select">
-            <textarea name="attraction" placeholder="Опишите подробно все свои восторги"></textarea>
-          </label>
+          <textarea name="attraction" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
-        <button type="submit" class="feedback__button button" >Отправить отзыв</button>
+        <button type="submit" class="feedback__button button">Отправить отзыв</button>
         <p class="feedback__required visually-hidden">* - Обязательные поля</p>
       </form>
     </main>
