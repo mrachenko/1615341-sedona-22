@@ -1,1 +1,54 @@
-// Начните писать стили здесь
+@import "advantages.less";
+@import "booking.less";
+@import "copyright.less";
+@import "intro.less";
+@import "map.less";
+@import "page-footer.less";
+@import "page-header.less";
+@import "page-main.less";
+@import "site-nav.less";
+@import "social.less";
+@import "input-text.less";
+@import "feedback.less";
+@import "choice.less";
+@import "photo-catalog.less";
+@import "photocard.less";
+@import "player.less";
+@import "video.less";
+@import "videoplayer-icons.less";
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("PT Sans"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/ptsans.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: bold;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("PT Sans Bold"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/ptsansbold.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/ptsansbold.woff") format("woff");
+}
+
+body {
+  background: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  display: none;
+}
