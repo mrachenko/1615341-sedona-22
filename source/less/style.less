@@ -17,6 +17,13 @@
 @import "video.less";
 @import "videoplayer-icons.less";
 
+@blue: #81b3d2;
+@white: #ffffff;
+@darkwhite: #eeeeee;
+@gray: #d6d6d6;
+@hover: #669ec0;
+@active: #5496bd;
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -30,7 +37,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   /* Браузер сначала попробует найти шрифт локально */
@@ -41,14 +48,15 @@
     url("/fonts/ptsansbold.woff") format("woff");
 }
 
+
 .page__body {
-  background: #ffffff;
+  background: @white;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
