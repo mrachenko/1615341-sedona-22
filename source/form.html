@@ -22,7 +22,7 @@
                 </a>
               </li>
               <li class="site-nav__list-item">
-                <a class="site-nav__list-item-link" href="form.html">
+                <a class="site-nav__list-item-link" href="#">
                   Форма отзыва
                 </a>
               </li>
@@ -33,12 +33,12 @@
               </li>
             </ul>
             <div class="page-header__navbar">
-              <a class="page-header__logo">
+              <a class="page-header__logo" href="index.html">
                 <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
               </a>
-              <div class="site-nav__toggle" >
+              <button class="site-nav__toggle">
                 <span></span>
-              </div>
+              </button>
             </div>
           </div>
         </nav>
@@ -60,8 +60,7 @@
       </section>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="feedback__user-info">
-          <legend class="feedback__legend visually-hidden">Данные человека:</legend>
-          <p class="feedback__start">Представьтесь:</p>
+          <legend class="feedback__legend">Представьтесь:</legend>
           <label class="feedback__input-text input-text">
             <span>Имя*:</span>
             <input type="text" name="name" placeholder="Петр" required>
@@ -77,8 +76,7 @@
         </fieldset>
 
         <fieldset class="feedback__user-contacts">
-          <legend class="feedback__legend visually-hidden">Контакты</legend>
-          <p class="feedback__start">Контактная информация:</p>
+          <legend class="feedback__legend">Контактная информация:</legend>
           <label class="feedback__input-text input-text input-text--tel">
             <span>Контактный телефон*:</span>
             <input type="tel" name="tel" placeholder="Введите телефон" required>
@@ -90,47 +88,44 @@
         </fieldset>
 
         <fieldset class="feedback__impression">
-          <legend class="feedback__legend visually-hidden">Впечатления</legend>
-          <p class="feedback__start">Ваше общее впечатление:</p>
+          <legend class="feedback__legend">Ваше общее впечатление:</legend>
           <label class="feedback__choice choice">
-            <input type="radio" name="impression" value="positive" checked>
+            <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
             <span>Скорее положительное</span>
           </label>
           <label class="feedback__choice choice">
-            <input type="radio" name="impression" value="negative">
+            <input class="visually-hidden" type="radio" name="impression" value="negative">
             <span>Скорее отрицательное</span>
           </label>
           <label class="feedback__choice choice">
-            <input type="radio" name="impression" value="not">
+            <input class="visually-hidden" type="radio" name="impression" value="not">
             <span>Затрудняюсь ответить</span>
           </label>
         </fieldset>
 
         <fieldset class="feedback__attraction">
-          <legend class="feedback__legend visually-hidden">Достопримечательности</legend>
-          <p class="feedback__start">Посещенные Достопримечательности:</p>
+          <legend class="feedback__legend">Посещенные достопримечательности:</legend>
           <label class="feedback__choice choice choice--checkbox">
-            <input type="checkbox" name="attraction" value="bridge" checked>
+            <input class="visually-hidden" type="checkbox" name="attraction" value="bridge" checked>
             <span>Мост Дьявола</span>
           </label>
           <label class="feedback__choice choice choice--checkbox">
-            <input type="checkbox" name="attraction" value="mountain" checked>
+            <input class="visually-hidden" type="checkbox" name="attraction" value="mountain" checked>
             <span>Гора-Колокол</span>
           </label>
           <label class="feedback__choice choice choice--checkbox">
-            <input type="checkbox" name="attraction" value="park" checked>
+            <input class="visually-hidden" type="checkbox" name="attraction" value="park" checked>
             <span>Слайд-парк</span>
           </label>
           <label class="feedback__choice choice choice--checkbox">
-            <input type="checkbox" name="attraction" value="rocks">
+            <input class="visually-hidden" type="checkbox" name="attraction" value="rocks">
             <span>Красные скалы</span>
           </label>
         </fieldset>
 
         <fieldset class="feedback__emotions">
-          <legend class="feedback__legend visually-hidden">Эмоции</legend>
-          <p class="feedback__start">Опишите свои эмоции:</p>
-          <textarea class="feedback__text text" wrap="soft" name="attraction" placeholder="Опишите подробно все свои восторги"></textarea>
+          <legend class="feedback__legend">Опишите свои эмоции:</legend>
+          <textarea class="feedback__text field-text" wrap="soft" name="attraction" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button type="submit" class="feedback__button button">Отправить отзыв</button>
         <p class="feedback__required visually-hidden">* - Обязательные поля</p>

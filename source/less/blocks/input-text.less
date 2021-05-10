@@ -1,24 +1,24 @@
-.input-text span {
-  margin-right: 13px;
-  line-height: 26px;
-}
-
-.input-text input {
-  font-family: "PT Sans", "Verdana", sans-serif;
-  flex-grow: 1;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  padding: 16px 22px;
-  background-color: @gray;
-  border: none;
-  min-width: 150px;
-}
-
 .input-text {
   display: flex;
   align-items: center;
+
+  span {
+    margin-right: 13px;
+    line-height: 26px;
+  }
+
+  input {
+    font-family: @PTSans;
+    flex-grow: 1;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 16px 22px;
+    background-color: @gray;
+    border: none;
+    min-width: 150px;
+  }
 
   &--tel,
   &--email {
