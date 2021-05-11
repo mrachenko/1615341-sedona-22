@@ -4,16 +4,30 @@
   margin-bottom: 35px;
 }
 
-.intro__background--main {
-  background: url("../img/back-mobile.jpg") no-repeat;
-  background-position: center;
+.intro__background {
+  &--main {
+    background: url("../img/back-mobile.jpg") no-repeat center;
+  }
+
+  &--not-main {
+    background: url("../img/back-desktop.jpg") no-repeat center;
+  }
 }
 
-.intro__background-text--main {
-  display: block;
-  margin: auto;
-  padding-top: 90px;
-  padding-bottom: 85px;
+.intro__background-text {
+  &--main {
+    display: block;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
+
+  &--not-main {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 85px;
+  }
 }
 
 .intro__title {

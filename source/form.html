@@ -8,36 +8,38 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
-        </a>
         <nav class="page-header__nav site-nav">
           <div class="site-nav__wrapper">
-            <button class="site-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
             <ul class="site-nav__list">
               <li class="site-nav__list-item">
-                <a href="#">
+                <a class="site-nav__list-item-link" href="index.html">
                   Главная
                 </a>
               </li>
               <li class="site-nav__list-item">
-                <a href="#">
+                <a class="site-nav__list-item-link" href="catalog.html">
                   Фото и видео
                 </a>
               </li>
               <li class="site-nav__list-item">
-                <a href="#">
+                <a class="site-nav__list-item-link" href="#">
                   Форма отзыва
                 </a>
               </li>
               <li class="site-nav__list-item">
-                <a href="#">
+                <a class="site-nav__list-item-link" href="#">
                   HTML Academy
                 </a>
               </li>
             </ul>
+            <div class="page-header__navbar">
+              <a class="page-header__logo" href="index.html">
+                <img src="img/logotype-mobile.svg" width="102" height="84" alt="City of Sedona">
+              </a>
+              <button class="site-nav__toggle">
+                <span></span>
+              </button>
+            </div>
           </div>
         </nav>
       </div>
@@ -47,13 +49,13 @@
         <div class="intro__wrapper">
           <div class="intro__background intro__background--not-main">
             <img class="intro__background-text intro__background-text--not-main" src="img/sedona.svg" alt="Седона">
-            <h1 class="intro__title intro__title--form">
-              Оставьте свой отзыв
-            </h1>
-            <p class="intro__description intro__description--form">
-              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
-            </p>
           </div>
+          <h1 class="intro__title intro__title--form">
+            Оставьте свой отзыв
+          </h1>
+          <p class="intro__description intro__description--form">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
         </div>
       </section>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="POST">
@@ -88,42 +90,42 @@
         <fieldset class="feedback__impression">
           <legend class="feedback__legend">Ваше общее впечатление:</legend>
           <label class="feedback__choice choice">
-            <input type="radio" name="impression" value="positive" checked>
+            <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
             <span>Скорее положительное</span>
           </label>
           <label class="feedback__choice choice">
-            <input type="radio" name="impression" value="negative">
+            <input class="visually-hidden" type="radio" name="impression" value="negative">
             <span>Скорее отрицательное</span>
           </label>
           <label class="feedback__choice choice">
-            <input type="radio" name="impression" value="not">
+            <input class="visually-hidden" type="radio" name="impression" value="not">
             <span>Затрудняюсь ответить</span>
           </label>
         </fieldset>
 
         <fieldset class="feedback__attraction">
           <legend class="feedback__legend">Посещенные достопримечательности:</legend>
-          <label class="feedback__choice choice">
-            <input type="checkbox" name="attraction" value="bridge" checked>
+          <label class="feedback__choice choice choice--checkbox">
+            <input class="visually-hidden" type="checkbox" name="attraction" value="bridge" checked>
             <span>Мост Дьявола</span>
           </label>
           <label class="feedback__choice choice choice--checkbox">
-            <input type="checkbox" name="attraction" value="mountain" checked>
+            <input class="visually-hidden" type="checkbox" name="attraction" value="mountain" checked>
             <span>Гора-Колокол</span>
           </label>
           <label class="feedback__choice choice choice--checkbox">
-            <input type="checkbox" name="attraction" value="park" checked>
+            <input class="visually-hidden" type="checkbox" name="attraction" value="park" checked>
             <span>Слайд-парк</span>
           </label>
           <label class="feedback__choice choice choice--checkbox">
-            <input type="checkbox" name="attraction" value="rocks">
+            <input class="visually-hidden" type="checkbox" name="attraction" value="rocks">
             <span>Красные скалы</span>
           </label>
         </fieldset>
 
         <fieldset class="feedback__emotions">
           <legend class="feedback__legend">Опишите свои эмоции:</legend>
-          <textarea name="attraction" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="feedback__text field-text" wrap="soft" name="attraction" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button type="submit" class="feedback__button button">Отправить отзыв</button>
         <p class="feedback__required visually-hidden">* - Обязательные поля</p>
