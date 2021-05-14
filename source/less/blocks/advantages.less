@@ -1,9 +1,16 @@
 .advantages__list {
   .clear-list;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.28fr 1fr 1fr;
+  }
 }
 
 .advantages__list-item {
   .clear-list;
+  text-align: center;
 
   &--real-city,
   &--bridge {
@@ -13,6 +20,25 @@
     text-align: center;
   }
 
+  @media (min-width: @tablet-width) {
+    &--real-city {
+      display: flex;
+      align-items: center;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row: 1;
+      padding-top: 0;
+    }
+
+    &--bridge {
+      display: flex;
+      align-items: center;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row: 3;
+      padding-top: 0;
+    }
+  }
   &--square,
   &--road,
   &--tourists {
@@ -49,6 +75,12 @@
 .advantages__img {
   display: block;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    &--bridge {
+      order: -1;
+    }
+  }
 }
 
 .advantages__title {
@@ -72,4 +104,8 @@
   color: @white;
   text-align: center;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 50px;
+  }
 }
