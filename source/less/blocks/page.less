@@ -1,9 +1,24 @@
 .page__body {
-  background: @white;
+  background: @lightgray;
   font-family: @PTSans;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+
+.page__wrapper {
+  width: 320px;
+  background: @white;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px @shadow;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
