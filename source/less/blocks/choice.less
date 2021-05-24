@@ -1,6 +1,5 @@
 .choice {
   display: block;
-  margin-bottom: 13px;
 
   input {
     margin: 0 25px;
@@ -16,5 +15,12 @@
 
   &--checkbox {
     margin-bottom: 24px;
+
+
+    @media (min-width: @tablet-width) {
+      span {
+        padding-left: 120px;
+      }
+    }
   }
 }

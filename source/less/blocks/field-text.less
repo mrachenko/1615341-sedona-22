@@ -4,6 +4,7 @@
   padding-left: 22px;
   padding-right: 22px;
   width: 236px;
+  display: block;
   text-transform: none;
   font-weight: 700;
   font-size: 18px;
@@ -12,4 +13,8 @@
   border: none;
   background-color: @lightgray;
   resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 604px;
+  }
 }
